@@ -11,7 +11,7 @@ import ContactImg from "../public/thom-milkovic.jpg";
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1440px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-amber-500">
           Contact
@@ -105,7 +105,7 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="animate-bounce rounded-full shadow-md shadow-gray-300 p-4 cursor-pointer hover:scale-125 ease-in duration-300">
-              <HiChevronDoubleUp className="text-amber-500" size={35} />
+              <HiChevronDoubleUp className="text-amber-500" size={32} />
             </div>
           </Link>
         </div>

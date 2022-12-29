@@ -6,7 +6,7 @@ import CoffeeImg from "../public/commerce.png";
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1440px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-amber-500">
           Projects

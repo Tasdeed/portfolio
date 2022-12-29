@@ -21,12 +21,14 @@ const Navbar = () => {
     <div className="fixed w-full h-20 z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* TODO: maybe make logo bigger */}
-        <Image
-          src="/../public/Personal_Logo.gif"
-          alt=""
-          height="100"
-          width="200"
-        />
+        <Link href="/">
+          <Image
+            src="/../public/Personal_Logo.gif"
+            alt=""
+            height="100"
+            width="200"
+          />
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -34,22 +36,22 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b border-b-[#1f2937]">
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b border-b-[#1f2937]">
                 Skills
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b border-b-[#1f2937]">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b border-b-[#1f2937]">
                 Contact
               </li>
@@ -68,7 +70,7 @@ const Navbar = () => {
         <div
           className={
             side
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
