@@ -27,7 +27,7 @@ const Projects = () => {
               <p className="pb-4 pt-2 text-white text-center">
                 Next.js / Firebase
               </p>
-              <Link href="/">
+              <Link href="/slice">
                 <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                   More Info
                 </p>

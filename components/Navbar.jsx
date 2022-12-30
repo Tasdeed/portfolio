@@ -88,21 +88,32 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="pb-4 pt-6 text-sm border-t border-gray-300">
+                <li
+                  onClick={() => setSide(false)}
+                  className="pb-4 pt-6 text-sm border-t border-gray-300"
+                >
                   Home
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about">
+                <li onClick={() => setSide(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills">
+                <li onClick={() => setSide(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects">
+                <li onClick={() => setSide(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact">
+                <li onClick={() => setSide(false)} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
