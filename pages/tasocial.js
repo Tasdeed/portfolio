@@ -25,19 +25,22 @@ const slice = () => {
           <p className="text-amber-500">Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using Next.js, served by a Firebase backend, and
-            hosted on Vercel. Users are able to manage tasks between numerous
-            "ecosystems" that they are able to create and invite other users to
-            join. Visual representations of tasks completed are present in both
-            the user's dashboard and within each ecosystem. There are 3
-            different types of ecosystems depending on the user's needs that
-            have their own point systems. Authentication is built on Firebase
-            and real-time messaging/ task updates are possible due to Firestore.
-            Wireframes were created using Figma and the GitHub issue board was
-            used to keep track of each team member's current and past
-            assignments.
+            This app was built using Next.js and served by a Firebase backend.
+            Users are prompted to log in with their Google accounts and
+            authenticated by a Google pop-up. They are able to message other
+            users by searching for their e-mail in real-time, thanks to
+            Firestore. Messages are timestamped and previous messages are stored
+            within the backend so they can be referred to if needed. This
+            project was my first attempt at using both Next.js and Firebase so I
+            was able to learn the pros/ cons of each technology. In particular,
+            I was able to utilize the ease of routing for Next.js (creating
+            different routes for each individual chat) and the power of
+            real-time database/ authentication of Firestore (authenticating
+            through Google and receiving/ sending messages immediately).
           </p>
-          <button className="shadow-none px-8 py-2 mt-4">Code</button>
+          <Link href="https://github.com/Tasdeed/tasocial">
+            <button className="shadow-none px-8 py-2 mt-4">Code</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-300 rounded-xl p-4">
           <div className="p-2">

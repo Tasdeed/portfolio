@@ -16,7 +16,7 @@ const slice = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1440px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Group Task-Management</h2>
+          <h2 className="py-2">Group Task-Management | "Slice"</h2>
           <h3>Next.js | Firebase | TailwindCSS</h3>
         </div>
       </div>
@@ -37,10 +37,14 @@ const slice = () => {
             used to keep track of each team member's current and past
             assignments.
           </p>
-          <button className="shadow-none px-8 py-2 mt-4 mr-1">
-            Deployed Site
-          </button>
-          <button className="shadow-none px-8 py-2 mt-4">Code</button>
+          <Link href="https://slice-task.vercel.app/">
+            <button className="shadow-none px-8 py-2 mt-4 mr-1">
+              Deployed Site
+            </button>
+          </Link>
+          <Link href="https://github.com/2209-Capstone-Team-B/Slice">
+            <button className="shadow-none px-8 py-2 mt-4">Code</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-300 rounded-xl p-4">
           <div className="p-2">

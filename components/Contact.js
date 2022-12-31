@@ -37,12 +37,16 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-evenly py-4">
-                  <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-                    <BsLinkedin />
-                  </div>
-                  <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-                    <BsGithub />
-                  </div>
+                  <Link href="https://www.linkedin.com/in/tasdid/">
+                    <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
+                      <BsLinkedin />
+                    </div>
+                  </Link>
+                  <Link href="https://github.com/Tasdeed">
+                    <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
+                      <BsGithub />
+                    </div>
+                  </Link>
                   <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
                     <BsMailbox />
                   </div>

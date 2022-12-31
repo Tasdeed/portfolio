@@ -26,7 +26,6 @@ const About = () => {
             free time, I love doing photography outside and am always down for a
             video game session when I'm not learning new technology.
           </p>
-          <p className="py-2">This is what I've been working on</p>
         </div>
         <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
