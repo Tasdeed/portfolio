@@ -121,12 +121,16 @@ const Navbar = () => {
                 Hit me up!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsLinkedin />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsGithub />
-                </div>
+                <Link href="https://www.linkedin.com/in/tasdid/">
+                  <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsLinkedin />
+                  </div>
+                </Link>
+                <Link href="https://github.com/Tasdeed">
+                  <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsGithub />
+                  </div>
+                </Link>
                 <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsMailbox />
                 </div>

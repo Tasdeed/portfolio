@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SliceImg from "../public/Slice.png";
+import SocialImg from "../public/Tasocial.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -12,12 +12,12 @@ const slice = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={SliceImg}
+          src={SocialImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1440px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Group Task-Management</h2>
-          <h3>Next.js | Firebase | TailwindCSS</h3>
+          <h3>Next.js | Firebase | Styled Components</h3>
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
@@ -37,9 +37,6 @@ const slice = () => {
             used to keep track of each team member's current and past
             assignments.
           </p>
-          <button className="shadow-none px-8 py-2 mt-4 mr-1">
-            Deployed Site
-          </button>
           <button className="shadow-none px-8 py-2 mt-4">Code</button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-300 rounded-xl p-4">
@@ -58,19 +55,10 @@ const slice = () => {
                 <RiRadioButtonFill className="pr-1" /> JavaScript
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Redux
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TailwindCSS
+                <RiRadioButtonFill className="pr-1" /> Styled Components
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Material UI
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Figma
-              </p>
-              <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> ChartJS
               </p>
             </div>
           </div>

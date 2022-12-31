@@ -25,7 +25,7 @@ const Projects = () => {
                 Group Task-Management
               </h3>
               <p className="pb-4 pt-2 text-white text-center">
-                Next.js / Firebase
+                Next.js | Firebase
               </p>
               <Link href="/slice">
                 <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
@@ -45,9 +45,9 @@ const Projects = () => {
                 Real-time 1-1 Messaging
               </h3>
               <p className="pb-4 pt-2 text-white text-center">
-                Next.js / Firebase
+                Next.js | Firebase
               </p>
-              <Link href="/">
+              <Link href="/tasocial">
                 <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                   More Info
                 </p>
@@ -65,9 +65,9 @@ const Projects = () => {
                 Simple E-commerce
               </h3>
               <p className="pb-4 pt-2 text-white text-center">
-                React / PostgreSQL
+                React | PostgreSQL
               </p>
-              <Link href="/">
+              <Link href="/commerce">
                 <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                   More Info
                 </p>
