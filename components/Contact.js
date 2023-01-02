@@ -21,8 +21,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, number, email, subject, message, submitted);
-
     let data = {
       name,
       number,
@@ -45,11 +43,14 @@ const Contact = () => {
         setSubmitted(true);
         setName("");
         setEmail("");
-        setBody("");
+        setMessage("");
         setNumber("");
         setSubject("");
       }
     });
+
+    const form = document.getElementById("contact_email");
+    form.reset();
   };
 
   return (
@@ -99,7 +100,7 @@ const Contact = () => {
           </div>
           <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-300 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form id="contact_email">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label htmlFor="name" className="uppercase text-sm py-2">
