@@ -36,12 +36,11 @@ const Main = () => {
                 <BsGithub />
               </div>
             </Link>
-            <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-              <BsMailbox />
-            </div>
-            <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-              <BsFillPersonLinesFill />
-            </div>
+            <Link href="/#contact">
+              <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
+                <BsMailbox />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

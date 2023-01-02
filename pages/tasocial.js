@@ -67,7 +67,7 @@ const slice = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back to main</p>
+          <p className="underline cursor-pointer">Back to projects</p>
         </Link>
       </div>
     </div>

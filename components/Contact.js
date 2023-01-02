@@ -8,8 +8,31 @@ import {
 } from "react-icons/bs";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/thom-milkovic.jpg";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(name, number, email, subject, message, submitted);
+
+    let data = {
+      name,
+      number,
+      email,
+      subject,
+      message,
+      submitted,
+    };
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1440px] m-auto px-2 py-16 w-full">
@@ -31,7 +54,8 @@ const Contact = () => {
                 <h2 className="py-2">Tasdid Hossain</h2>
                 <p>Software Engineer</p>
                 <p className="py-4">
-                  Available for Full-time positions. Let's talk!
+                  Available for full-time positions, apprencticeships, & any
+                  roles that will help me learn!
                 </p>
               </div>
               <div>
@@ -50,9 +74,6 @@ const Contact = () => {
                   <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
                     <BsMailbox />
                   </div>
-                  <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
                 </div>
               </div>
             </div>
@@ -62,10 +83,14 @@ const Contact = () => {
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label htmlFor="name" className="uppercase text-sm py-2">
+                      Name
+                    </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
+                      name="name"
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -73,33 +98,49 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
+                      name="number"
+                      onChange={(e) => setNumber(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label htmlFor="email" className="uppercase text-sm py-2">
+                    Email
+                  </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                     type="email"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                     type="text"
+                    name="subject"
+                    onChange={(e) => setSubject(e.target.value)}
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label htmlFor="message" className="uppercase text-sm py-2">
+                    Message
+                  </label>
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300"
+                    className="border-2 rounded-lg p-3 border-gray-300 text-black"
                     rows="16"
+                    type="text"
+                    name="message"
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4 shadow-none">
+                <button
+                  onClick={(e) => handleSubmit(e)}
+                  className="w-full p-4 text-gray-100 mt-4 shadow-none"
+                >
                   Send Message
                 </button>
               </form>
