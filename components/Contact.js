@@ -64,17 +64,13 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-300 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src={ContactImg}
-                  alt=""
-                />
+                <Image className="rounded-xl" src={ContactImg} alt="" />
               </div>
               <div>
                 <h2 className="py-2">Tasdid Hossain</h2>
                 <p>Software Engineer</p>
                 <p className="py-4">
-                  Available for full-time positions, apprencticeships, & any
+                  Available for full-time positions, apprenticeships, & any
                   roles that will help me learn!
                 </p>
               </div>
@@ -91,9 +87,11 @@ const Contact = () => {
                       <BsGithub />
                     </div>
                   </Link>
-                  <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
-                    <BsMailbox />
-                  </div>
+                  <Link href="/#contact">
+                    <div className="rounded-full shadow-md shadow-gray-300 p-6 cursor-pointer hover:scale-125 ease-in duration-300">
+                      <BsMailbox />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

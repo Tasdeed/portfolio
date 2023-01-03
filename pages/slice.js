@@ -26,16 +26,15 @@ const slice = () => {
           <h2>Overview</h2>
           <p>
             This app was built using Next.js, served by a Firebase backend, and
-            hosted on Vercel. Users are able to manage tasks between numerous
-            "ecosystems" that they are able to create and invite other users to
-            join. Visual representations of tasks completed are present in both
-            the user's dashboard and within each ecosystem. There are 3
-            different types of ecosystems depending on the user's needs that
-            have their own point systems. Authentication is built on Firebase
-            and real-time messaging/ task updates are possible due to Firestore.
-            Wireframes were created using Figma and the GitHub issue board was
-            used to keep track of each team member's current and past
-            assignments.
+            hosted on Vercel. Users can manage tasks between numerous
+            "ecosystems" that they create and invite other users to join. Visual
+            representations of tasks completed are present in both the user's
+            dashboard and within each ecosystem. There are 3 different types of
+            ecosystems depending on the user's needs that have their point
+            systems. Authentication is built on Firebase and real-time
+            messaging/ task updates are possible due to Firestore. Wireframes
+            were created using Figma and the GitHub issue board was used to keep
+            track of each team member's current and past assignments.
           </p>
           <Link href="https://slice-task.vercel.app/">
             <button className="shadow-none px-8 py-2 mt-4 mr-1">

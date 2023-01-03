@@ -26,14 +26,15 @@ const slice = () => {
           <h2>Overview</h2>
           <p>
             This app was built using React with a PostgreSQL backend and state
-            management using Redux. Users are able to add coffee to their carts
-            with a guest cart and as a signed-in user with a consistent cart.
-            There is a variety of coffee types with the database keeping track
-            of each user's cart and their running totals in the checkout page.
-            This project allowed my team and I to explore creating our first
+            management using Redux. Users can add coffee to their carts with a
+            guest cart and as a signed-in user with a consistent cart. There is
+            a variety of coffee types with the database keeping track of each
+            user's cart and their running totals on the checkout page. This
+            project allowed my team and I to explore creating our first
             full-stack application from scratch along with the nuances of
             dividing tasks between members. We were able to deepen our knowledge
-            on Redux and making backend calls specifically.
+            of Redux and make backend calls, using Axios & Express,
+            specifically.
           </p>
           <Link href="https://github.com/Cinnamon-graceShopper/cinnamon-graceShopper">
             <button className="shadow-none px-8 py-2 mt-4">Code</button>
@@ -56,6 +57,9 @@ const slice = () => {
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Redux
+              </p>
+              <p className="py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Axios
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Material UI

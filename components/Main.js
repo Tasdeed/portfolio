@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsMailbox,
-  BsFillPersonLinesFill,
-} from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsMailbox } from "react-icons/bs";
 
 const Main = () => {
   return (

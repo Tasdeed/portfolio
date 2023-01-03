@@ -2,12 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FcAutomatic } from "react-icons/fc";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsMailbox,
-  BsFillPersonLinesFill,
-} from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsMailbox } from "react-icons/bs";
 import { useState } from "react";
 import personal from "../public/Personal_Logo.gif";
 
