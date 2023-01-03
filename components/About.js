@@ -1,4 +1,5 @@
 import Image from "next/image";
+import laptop from "../public/nikita-kachanovsky.jpg";
 
 const About = () => {
   return (
@@ -30,7 +31,7 @@ const About = () => {
         <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src="/../public/nikita-kachanovsky.jpg"
+            src={laptop}
             alt="Black computer setups >"
             height={500}
             width={1000}

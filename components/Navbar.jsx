@@ -9,6 +9,7 @@ import {
   BsFillPersonLinesFill,
 } from "react-icons/bs";
 import { useState } from "react";
+import personal from "../public/Personal_Logo.gif";
 
 const Navbar = () => {
   const [side, setSide] = useState(false);
@@ -22,12 +23,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* TODO: maybe make logo bigger */}
         <Link href="/">
-          <Image
-            src="/../public/Personal_Logo.gif"
-            alt=""
-            height="100"
-            width="200"
-          />
+          <Image src={personal} height="100" width="200" alt="/" />
         </Link>
         <div>
           <ul className="hidden md:flex">
@@ -133,9 +129,6 @@ const Navbar = () => {
                 </Link>
                 <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <BsMailbox />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
                 </div>
               </div>
             </div>
