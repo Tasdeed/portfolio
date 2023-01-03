@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FcAutomatic } from "react-icons/fc";
 import { BsLinkedin, BsGithub, BsMailbox } from "react-icons/bs";
 import { useState } from "react";
-import personal from "../public/Personal_Logo.gif";
+import personal from "../public/1.png";
 
 const Navbar = () => {
   const [side, setSide] = useState(false);
@@ -16,9 +16,14 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/* TODO: maybe make logo bigger */}
         <Link href="/">
-          <Image src={personal} height="100" width="200" alt="/" />
+          <Image
+            src={personal}
+            height="100"
+            width="200"
+            alt="/"
+            className="pt-2"
+          />
         </Link>
         <div>
           <ul className="hidden md:flex">
