@@ -162,6 +162,15 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+              {submitted ? (
+                <div className="text-center">
+                  <p className="flex justify-center items-center py-3 text-xl text-amber-500">
+                    Thanks for the message!
+                  </p>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

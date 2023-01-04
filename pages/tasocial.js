@@ -29,7 +29,7 @@ const slice = () => {
             Users are prompted to log in with their Google accounts and
             authenticated by a Google pop-up. They can message other users by
             searching for their e-mail in real-time, thanks to Firestore.
-            Messages are time stamped and previous messages are stored within
+            Messages are time-stamped and previous messages are stored within
             the backend so they can be referred to if needed. This project was
             my first attempt at using both Next.js and Firebase so I was able to
             learn the pros/ cons of each technology. In particular, I was able

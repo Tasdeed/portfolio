@@ -16,7 +16,7 @@ const Main = () => {
           <h1 className="">Software Engineer & Web Developer</h1>
           <p className="py-4 sm:max-w-[70%] m-auto">
             I am a full-stack software engineer who loves creating simple, yet
-            elegant, web applications. Currently, I am learning more about cloud
+            elegant web applications. Currently, I am learning more about cloud
             computing with python while keeping my JavaScript (React, Node.js,
             Express) sharp through personal projects.
           </p>

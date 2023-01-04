@@ -29,12 +29,17 @@ const slice = () => {
             management using Redux. Users can add coffee to their carts with a
             guest cart and as a signed-in user with a consistent cart. There is
             a variety of coffee types with the database keeping track of each
-            user's cart and their running totals on the checkout page. This
-            project allowed my team and I to explore creating our first
+            user's cart and their running totals on the checkout page.
+          </p>
+          <br></br>
+          <p>
+            This project allowed my team and I to explore creating our first
             full-stack application from scratch along with the nuances of
             dividing tasks between members. We were able to deepen our knowledge
-            of Redux and make backend calls, using Axios & Express,
-            specifically.
+            of Redux and making backend calls using Axios/ Express. The problems
+            and breakthroughs we experienced definitely laid a strong foundation
+            from which we would be able create bigger and better web
+            applications.
           </p>
           <Link href="https://github.com/Cinnamon-graceShopper/cinnamon-graceShopper">
             <button className="shadow-none px-8 py-2 mt-4">Code</button>

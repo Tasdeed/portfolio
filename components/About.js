@@ -1,5 +1,5 @@
 import Image from "next/image";
-import laptop from "../public/nikita-kachanovsky.jpg";
+import me from "../public/portrait.jpg";
 
 const About = () => {
   return (
@@ -24,14 +24,15 @@ const About = () => {
             with the fantastic teachers and fellow engineers I have met, my
             knowledge goes beyond my years. I have experience working in teams
             of varying sizes, solo, and even for side businesses. I love doing
-            photography outside in my free time and am always down for a video
-            game session when I'm not learning new technology.
+            photography in my free time and indulge in an online game session
+            when I'm not learning new technology (some of my favorites include
+            Cities Skyline & Valorant).
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src={laptop}
+            src={me}
             alt="Black computer setups >"
             height={500}
             width={1000}
