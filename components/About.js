@@ -1,11 +1,18 @@
 import Image from "next/image";
 import me from "../public/portrait.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1440px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+        <div data-aos="fade-up" data-aos-duration="800" className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-amber-500">
             About
           </p>
@@ -29,7 +36,11 @@ const About = () => {
             Cities Skyline & Valorant).
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="800"
+          className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300"
+        >
           <Image
             className="rounded-xl"
             src={me}

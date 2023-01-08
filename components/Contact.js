@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  BsFillPersonLinesFill,
-  BsGithub,
-  BsLinkedin,
-  BsMailbox,
-} from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsMailbox } from "react-icons/bs";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/thom-milkovic.jpg";
 import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -53,6 +51,10 @@ const Contact = () => {
     form.reset();
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1440px] m-auto px-2 py-16 w-full">
@@ -61,7 +63,11 @@ const Contact = () => {
         </p>
         <h2 className="py-4">Get in Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-300 rounded-xl p-4">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-300 rounded-xl p-4"
+          >
             <div className="lg:p-4 h-full">
               <div>
                 <Image className="rounded-xl" src={ContactImg} alt="" />
@@ -96,7 +102,11 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-300 rounded-xl lg:p-4">
+          <div
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            className="col-span-3 w-full h-auto shadow-lg shadow-gray-300 rounded-xl lg:p-4"
+          >
             <div className="p-4">
               <form id="contact_email">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">

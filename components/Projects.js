@@ -3,8 +3,14 @@ import Link from "next/link";
 import SliceImg from "../public/Slice.png";
 import TasocialImg from "../public/Tasocial.png";
 import CoffeeImg from "../public/commerce.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1440px] mx-auto px-2 py-16">
@@ -14,7 +20,11 @@ const Projects = () => {
         <h2 className="py-4">What I've Built</h2>
         <p className="text-md tracking-wider py-2">Pro-tip: Hover over them!</p>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]"
+          >
             <Image
               className="rounded-xl group-hover:opacity-20"
               src={SliceImg}
@@ -34,7 +44,11 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]"
+          >
             <Image
               className="rounded-xl group-hover:opacity-20"
               src={TasocialImg}
@@ -54,7 +68,11 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-300 rounded-xl p-4 group hover:bg-gradient-to-r from-amber-500 to-[#709dff]"
+          >
             <Image
               className="rounded-xl group-hover:opacity-20"
               src={CoffeeImg}
