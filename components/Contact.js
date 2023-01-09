@@ -118,6 +118,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
                       name="name"
+                      required
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
@@ -141,6 +142,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                     type="email"
                     name="email"
+                    required
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
@@ -165,12 +167,16 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-                <button
-                  onClick={(e) => handleSubmit(e)}
-                  className="w-full p-4 text-gray-100 mt-4 shadow-none"
-                >
-                  Send Message
-                </button>
+                {email.length >= 1 || name.length >= 1 ? (
+                  <button
+                    onClick={(e) => handleSubmit(e)}
+                    className="w-full p-4 text-gray-100 mt-4 shadow-none"
+                  >
+                    Send Message
+                  </button>
+                ) : (
+                  ""
+                )}
               </form>
               {submitted ? (
                 <div className="text-center">
